@@ -9,7 +9,7 @@ import sys
 import math
 import numpy as np
 
-from scipy.misc import factorial
+from scipy.special import factorial
 
 """ Conversion """
 def deg2rad(angle):
