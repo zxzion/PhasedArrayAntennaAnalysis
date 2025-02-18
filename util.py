@@ -46,6 +46,7 @@ def normalize(x):
 """ Polynomials """
 def binomial(x, y):
     """ Calculate Binomial Coefficient """
+    #二项式系数（binomial coefficient），或组合数，在数学里表达为：(1 + x)ⁿ展开后x的系数（其中n为自然数）。从定义可看出二项式系数的值为整数。
     try:
         binom = math.factorial(x) // math.factorial(y) // math.factorial(x - y)
     except ValueError:
