@@ -91,8 +91,8 @@ class RectangularArray(Antenna):
         """
         e = self.element
         self.getArrayFactor(e.theta_start,e.theta_stop,e.theta_step,e.phi_start,e.phi_stop,e.phi_step,theta_steering,phi_steering)
-        Ntheta = (e.theta_stop-e.theta_start)/e.theta_step + 1
-        Nphi = (e.phi_stop-e.phi_start)/e.phi_step + 1
+        Ntheta = int((e.theta_stop-e.theta_start)/e.theta_step + 1)
+        Nphi = int((e.phi_stop-e.phi_start)/e.phi_step + 1)
 
         theta_range = deg2rad(np.linspace(e.theta_start,e.theta_stop,Ntheta))
         phi_range = deg2rad(np.linspace(e.phi_start,e.phi_stop,Nphi))
